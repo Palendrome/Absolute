@@ -1,0 +1,60 @@
+.large-hero{
+	position:relative;
+	margin:0;
+	
+	&__text-content{
+		position:absolute;
+		top:45%;
+		transform:translateY(-50%);
+		left:0;
+		width:100%;
+		text-align:center;
+	}
+	
+	&__video-content{
+		width:100%;
+		display:block;
+	}
+
+	&__quote{
+		max-width:16rem;
+		font-size:0.8rem;
+		font-weight:200;
+		margin:0 auto 0 auto;
+		text-shadow:6px 6px 2px rgba(22,22,22,0.8);
+
+		@mixin atSmall{
+			max-width:26rem;
+			font-size:1.4rem;
+		}
+		
+		@mixin atMedium{			
+			max-width:30rem;
+			font-size:2.0rem;			
+		}
+		
+		@mixin atLarge{			
+			max-width:30rem;
+			font-size:2.0rem;
+		}
+	}
+
+	&__subtext{			
+		font-size:0.6rem;
+		font-weight:300;
+		margin-top:30px;		
+		text-shadow:4px 4px 2px rgba(22,22,22,0.4);
+		
+		@mixin atSmall{			
+			font-size:0.8rem;
+		}
+		
+		@mixin atMedium{
+			font-size:1.0rem;			
+		}
+		
+		@mixin atLarge{	
+			font-size:1.1rem;
+		}
+	}
+}
