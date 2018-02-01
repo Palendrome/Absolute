@@ -3,6 +3,7 @@
 	margin:0;
 	
 	&__text-content{
+		padding-top:60px;
 		position:absolute;
 		top:45%;
 		transform:translateY(-50%);
