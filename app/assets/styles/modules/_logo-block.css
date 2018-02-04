@@ -1,0 +1,42 @@
+.logo-block{
+		position:absolute;
+		width:100%;
+		z-index:1;
+		
+		@mixin atMedium{			
+			top:60px;
+			left:20px;
+			background-color:red;
+			/* width:100%; */
+			/* display:inline-block; */
+		}
+	
+	&__text{		
+		position:absolute;
+		top:0px;
+		left:0px;
+		
+		font-family:"Oswald", Sans-serif;
+		font-size:1.5rem;
+		font-weight:300;
+		color:#fff;
+		text-shadow:6px 6px 4px rgba(22,22,22,0.4);
+		
+		@mixin atMedium{					
+			top:200px;
+			left:280px;
+			font-size:4.0rem;
+		}
+	}
+	
+	&__image{
+			position:absolute;
+			width:120px;
+			height:auto;
+			/* background-color:green; */			
+			@mixin atMedium{			
+				width:320px;
+				height:auto;
+			}
+		}
+}

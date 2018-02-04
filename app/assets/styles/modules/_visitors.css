@@ -1,0 +1,32 @@
+.visitors{
+	position:absolute;
+	top: 480px;	
+	font-family:"Oswald",sans-serif;
+	font-size:1.6rem;
+	font-weight:200;
+	text-align:left;
+	
+	
+	&__subline{
+	position:relative;
+	left:630px;
+	font-family:"Oswald",sans-serif;
+	font-size:3.5rem;
+	font-weight:200;
+	text-shadow:6px 6px 4px rgba(22,22,22,0.4);
+	}
+	
+	&__content{
+		display:inline-block;
+		font-size:1.2rem;
+		width:45%;
+		padding:120px 30px 0 30px;
+		text-align:justify;		
+	}
+	
+	a{
+		text-decoration:none;
+		color:$highlight;
+			
+	}
+}

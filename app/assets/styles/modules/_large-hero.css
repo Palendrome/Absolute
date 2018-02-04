@@ -15,6 +15,7 @@
 	&__video-content{
 		width:100%;
 		display:block;
+		z-index:-1;
 	}
 
 	&__quote{

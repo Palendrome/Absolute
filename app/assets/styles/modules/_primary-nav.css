@@ -1,7 +1,7 @@
 .primary-nav{
 
 	&--pull-right{
-		float:right;
+		float:right;		
 	}
 	
 	ul{
@@ -22,6 +22,15 @@
 		text-decoration:none;
 		font-weight:300;
 		display:block;
-		padding:12px 0;
+		padding:12px 12px;
+		border-radius:8px;
+	}
+	
+	a:hover{
+		background-color:rgba($mainBlue,1.0);
+	}
+	
+	#current a{
+		background-color:rgba($mainOrange,1.0);
 	}
 }
