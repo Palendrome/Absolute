@@ -1,19 +1,27 @@
 .visitors{
-	position:absolute;
-	top: 480px;	
-	font-family:"Oswald",sans-serif;
-	font-size:1.6rem;
-	font-weight:200;
-	text-align:left;
-	
-	
-	&__subline{
-	position:relative;
-	left:630px;
+	/* position:absolute; */
+	top: 0px;	
+	left:0px;
+	width:1200px;
+	height:678px;	
 	font-family:"Oswald",sans-serif;
 	font-size:3.5rem;
 	font-weight:200;
+	text-align:left;
 	text-shadow:6px 6px 4px rgba(22,22,22,0.4);
+	background-image: url(assets/images/Sally_pan_1920x670.jpg);
+	
+	@mixin atMedium{
+	top: 310px;	
+	left:400px;
+	font-family:"Oswald",sans-serif;
+	font-size:2.5rem;
+	}
+	
+	@mixin atLarge{
+		top: 480px;	
+		left:620px;
+		font-size:3.5rem;
 	}
 	
 	&__content{
@@ -27,6 +35,12 @@
 	a{
 		text-decoration:none;
 		color:$highlight;
-			
+	}
+	
+	&__hero{		
+		background-image: url("assets/images/Sally_pan_1920x670.jpg");
+		/* background-attachment:fixed; */
+		width:1200px;
+		height:678px;		
 	}
 }

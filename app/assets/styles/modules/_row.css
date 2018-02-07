@@ -1,14 +1,24 @@
 .row{
+	@mixin clearfix;	
+	font-size:0.6rem;
 	
-	@mixin clearfix;
+	&__link{		
+		text-decoration:none;
+		color:$highlight;	
+	}
 	
-	font-size:1.2rem;
+	@mixin atSmall{
+		float:left;
+		font-size:0.6rem;
+	}
 	
 	@mixin atMedium{
-		font-size:1.0rem;
+		float:left;
+		font-size:0.8rem;
 	}
 	
 	@mixin atLarge{
+		float:left;
 		font-size:1.2rem;
 	}
 	
@@ -31,15 +41,22 @@
 	}
 	
 	&__50{
-		float:left;
-		width:50%;
-	}
-	
-	a{
-		text-decoration:none;
-		color:$highlight;			
-	}
-	
-	
+		/* float:left; */
+		width:100%;
 		
+		@mixin atSmall{
+			float:left;
+			width:50%;
+		}
+		
+		@mixin atMedium{
+			float:left;
+			width:50%;
+		}
+		@mixin atLarge{
+			float:left;
+			width:50%;
+		}
+	}
+			
 }

@@ -24,6 +24,22 @@
 		display:block;
 		padding:12px 12px;
 		border-radius:8px;
+		
+		@mixin atSmall{
+			font-size:0.8rem;
+			padding:12px 8px;
+		}
+		
+		@mixin atMedium{
+			font-size:1.0rem;
+			padding:12px 8px;
+		}
+		
+		@mixin atLarge{
+			font-size:1.4rem;
+			padding:12px 12px;
+			
+		}
 	}
 	
 	a:hover{

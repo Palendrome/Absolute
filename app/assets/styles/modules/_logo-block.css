@@ -1,36 +1,56 @@
 .logo-block{
 		position:absolute;
-		width:100%;
-		z-index:1;
+		top:26px;
+		left:8px;
+		width:80px;		
+		z-index:1;		
 		
-		@mixin atMedium{			
-			top:80px;
-			left:30px;
-			background-color:red;
+		@mixin atSmall{			
+			top:10px;
+			left:60px;			
 			width:100%;
+		}
+			
+		@mixin atMedium{			
+			top:10%;
+			left:10px;		
+			width:200px;
 			/* display:inline-block; */
+		}
+		
+		@mixin atLarge{
+			top:8%;
+			left:0;			
+			width:380px;
 		}
 	
 	&__text{		
 		position:absolute;
-		top:0px;
-		left:0px;
-		
+		top:40px;
+		left:20px;
+		width:100%;
 		font-family:"Oswald", Sans-serif;
-		font-size:1.4rem;
+		font-size:1.1rem;
 		font-weight:400;
 		color:rgba(223,242,242,1.0);
 		text-shadow:4px 4px 4px rgba(22,22,22,0.4);
 		
+		
+		@mixin atSmall{					
+			top:64px;
+			left:130px;
+			font-size:1.5rem;
+		}
+		
 		@mixin atMedium{					
 			top:84px;
-			left:160px;
+			left:180px;
 			font-size:2.8rem;
 		}
 		
 		@mixin atLarge{
-			top:150px;
-			left:290px;
+			top:160px;
+			left:340px;
 			font-size:3.8rem;
 			}
 		
@@ -38,11 +58,16 @@
 	}
 	
 	&__image{
-			position:absolute;
-			width:80px;
+			/* position:absolute; */
+			width:12%;
 			height:auto;
-			/* background-color:green; */	
+			/* background-color:green;	 */
 			
+			
+			@mixin atSmall{			
+				width:140px;
+				height:auto;
+			}
 			
 			@mixin atMedium{			
 				width:180px;
@@ -50,8 +75,8 @@
 			}
 			
 			@mixin atLarge{
-				width:320px;
+				width:12%;
 				height:auto;
 			}
-		}
+	}
 }
