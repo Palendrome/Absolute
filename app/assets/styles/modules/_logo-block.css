@@ -1,11 +1,12 @@
 .logo-block{
 		position:absolute;
-		top:65px;
-		left:70px;
+		top:0px;
+		left:80px;
 		width:250px;		
 		z-index:4;
 		user-select:none;
-		background-color:rgba(200,240,190,0.5);
+		/* background-color:rgba(200,240,190,0.5); */
+		line-height:2.8rem;
 		
 		@mixin atSmall{			
 			top:8px;
@@ -15,27 +16,27 @@
 		}
 									
 		@mixin atMedium{			
-			top:20px;
+			top:10px;
 			left:12px;		
-			width:280px;
+			width:440px;
 			/* display:inline-block; */
 		}
 		
 		@mixin atLarge{
 			top:12px;
-			left:70px;
-			width:250px;	
+			left:20px;
+			width:450px;
+			line-height:1.2;			
 		}
 	
-	&__text{
-		
+	&__text{		
 		position:absolute;
 		text-align:left;
-		top:90px;
-		left:28px;
+		top:62px;
+		left:16px;
 		width:100%;
 		font-family:"Oswald", Sans-serif;
-		font-size:2.4rem;
+		font-size:2.0rem;
 		font-weight:400;
 		color:rgba(223,242,242,1.0);
 		text-shadow:4px 4px 4px rgba(22,22,22,0.4);
@@ -48,15 +49,15 @@
 		}
 		
 		@mixin atMedium{					
-			top:122px;
-			left:240px;
+			top:135px;
+			left:250px;
 			font-size:2.6rem;
 			text-align:left;
 		}
 		
 		@mixin atLarge{
-			top:174px;
-			left:340px;
+			top:200px;
+			left:370px;
 			font-size:4.0rem;
 			text-align:left;
 			}
@@ -64,8 +65,8 @@
 		
 	}
 	
-	imgsss{
-			width:33px;
+	&__image{
+			width:200px;
 			height:auto;
 			
 			@mixin atSmall{			
@@ -74,7 +75,7 @@
 			}
 			
 			@mixin atMedium{			
-				width:280px;
+				width:300px;
 				height:auto;
 			}
 			

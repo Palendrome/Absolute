@@ -1,11 +1,12 @@
 .large-hero{
 	position:relative;
-	top:0px;	
+	top:60px;	
 	width:100%;
 	height:100%;
 	overflow:hidden;
 	user-select:none;
 	cursor:default;
+	line-height:1.6rem;
 	
 	@mixin atSmall{
 		top:0;
@@ -21,12 +22,13 @@
 	
 	&__text-content{		
 		position:absolute;
-		top:320px;
+		top:260px;
 		left:0;
 		width:100%;			
 		text-align:center;
 		font-weight:300;
-		font-size:1.2rem;
+		font-size:1.0rem;
+		line-height:1.4rem;
 		text-shadow:4px 4px 6px rgba(22,22,22,0.8);
 		
 		@mixin atSmall{
@@ -34,6 +36,7 @@
 			left:0;
 			font-weight:300;
 			font-size:1.6rem;
+			line-height:1.4rem;
 		}		
 
 		@mixin atMedium{
@@ -41,6 +44,7 @@
 			left:0;
 			font-weight:300;
 			font-size:1.4rem;
+			line-height:1.8rem;
 		}		
 
 		@mixin atLarge{			
@@ -48,6 +52,7 @@
 			left:0;			
 			font-weight:300;
 			font-size:2.4rem;
+			line-height:2.4rem;
 		}
 		
 	}
@@ -65,37 +70,12 @@
 		display:block;
 		z-index:-1;
 	}
-
-	&__quote{		
-		max-width:16rem;
-		font-size:0.8rem;
-		font-weight:200;
-		margin:0 auto 0 auto;
-		text-shadow:6px 6px 2px rgba(22,22,22,0.8);
-
-		@mixin atSmall{
-			max-width:26rem;
-			font-size:1.4rem;
-		}
-		
-		@mixin atMedium{			
-			max-width:22rem;
-			font-size:1.2rem;
-			text-shadow:3px 3px 2px rgba(22,22,22,0.8);			
-		}
-		
-		@mixin atLarge{			
-			max-width:32rem;
-			font-size:2.0rem;	
-			width:20px;
-			margin:0 auto 0 auto;			
-		}
-	}
+	
 
 	&__subtext{			
 		font-size:0.8rem;
 		font-weight:300;
-		margin-top:22px;		
+		margin-top:10px;		
 		text-shadow:4px 4px 2px rgba(22,22,22,0.4);
 		
 		@mixin atSmall{

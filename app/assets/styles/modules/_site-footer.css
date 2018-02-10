@@ -2,7 +2,7 @@
 	position:fixed;
 	bottom:0;
 	left:0;
-	background-color:rgba($mainBlue,0.4);
+	background-color:rgba($mainBlue,1.0);
 	color:#fff;
 	padding:0.2rem 0;
 	text-align:center;
@@ -11,6 +11,7 @@
 	height:60px;
 	user-select:none;
 	cursor:default;	
+	border-top:1px solid #fff;
 	
 	&__text{
 		display:block;
@@ -42,8 +43,12 @@
 		}
 	}
 	
-	&--visitors{		
-		background-color:rgba($mainBlue,0.4);
+	/* &--visitors{
+		position:fixed;
+		bottom:0;
+		left:0;
+		
+		background-color:rgba($mainBlue,1.0);
 		color:#fff;
 		padding:0.2rem 0;
 		text-align:center;
@@ -52,5 +57,5 @@
 		height:60px;
 		user-select:none;
 		cursor:default;		
-	}
+	} */
 }
