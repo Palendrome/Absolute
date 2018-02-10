@@ -1,35 +1,56 @@
 .site-footer{
-	background-color:$mainBlue;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background-color:rgba($mainBlue,0.4);
 	color:#fff;
-	padding:0.5rem 0;
+	padding:0.2rem 0;
 	text-align:center;
-	font-size:1rem;
-	
+	font-size:1.0rem;
+	width:100%;
+	height:60px;
+	user-select:none;
+	cursor:default;	
 	
 	&__text{
 		display:block;
-		margin-bottom:1rem;
+		margin:0;
 		font-weight:200;
-		font-size:1.rem;
+		font-size:0.7rem;
+		user-select:none;
+		cursor:default;
 		
 		@mixin atSmall{
 			display:inline;
-			margin-bottom:0;
-			margin-right:1.4rem;
-			font-size:0.8;
+			/* margin-bottom:0;
+			margin-right:1.0rem; */
+			font-size:1.0rem;
 		}
 		
 		@mixin atMedium{
 			display:inline;
-			margin-bottom:0;
-			margin-right:1.0rem;
+			/* margin-bottom:0;
+			margin-right:1.0rem; */
+			font-size:1.0rem;
 		}
 		
 		@mixin atLarge{
 			display:inline;
-			margin-bottom:0;
-			margin-right:1.4rem;
+			/* margin-bottom:0;
+			margin-right:1.4rem; */
 			font-size:1.4rem;
 		}
+	}
+	
+	&--visitors{		
+		background-color:rgba($mainBlue,0.4);
+		color:#fff;
+		padding:0.2rem 0;
+		text-align:center;
+		font-size:1.0rem;
+		width:100%;
+		height:60px;
+		user-select:none;
+		cursor:default;		
 	}
 }

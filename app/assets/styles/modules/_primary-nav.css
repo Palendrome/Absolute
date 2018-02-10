@@ -1,5 +1,5 @@
-.primary-nav{
-
+.primary-nav{		
+		
 	&--pull-right{
 		float:right;		
 	}
@@ -14,36 +14,44 @@
 	li{
 		list-style:none;
 		float:left;
-		padding-right:20px;
+		padding:0;
+		
+		@mixin atSmall{
+			padding-right:6px;
+		}
+				
+		@mixin atMedium{
+			padding-right:8px;
+		}
+		
+		@mixin atLarge{
+			padding-right:10px;			
+		}
 	}
 	
 	a{
 		color:#fff;
 		text-decoration:none;
+		font-size:0.8rem;
 		font-weight:300;
 		display:block;
-		padding:12px 12px;
-		border-radius:8px;
-		
-		@mixin atSmall{
-			font-size:0.8rem;
-			padding:12px 8px;
-		}
+		padding:6px 8px;
+		border-radius:8px;		
 		
 		@mixin atMedium{
 			font-size:1.0rem;
-			padding:12px 8px;
+			padding:6px 8px;
 		}
 		
 		@mixin atLarge{
 			font-size:1.4rem;
-			padding:12px 12px;
+			padding:8px 12px;
 			
 		}
 	}
 	
 	a:hover{
-		background-color:rgba($mainBlue,1.0);
+		background-color:rgba($mainBlue,0.6);
 	}
 	
 	#current a{

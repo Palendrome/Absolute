@@ -1,0 +1,83 @@
+.visitors-hero{
+	position:relative;	
+	overflow:hidden;
+	user-select:none;
+	cursor:default;	
+	margin-top:80px;
+	
+	@mixin atMedium{
+		margin-top:0;
+	}
+	
+	@mixin atLarge{
+		margin-top:0;
+	}
+
+	&__image{		
+		display:block;
+	}
+	
+	&__logo{
+		position:absolute;
+		top:2px;
+		left:10px;		
+		z-index:2;
+		
+		@mixin atMedium{
+			top:30px;
+			left:40px;				
+		}
+		
+		@mixin atLarge{
+			top:20px;
+			left:40px;				
+		}
+	}
+	
+	&__logo-image{
+		width:110px;
+		height:auto;
+		
+		@mixin atMedium{			
+			width:180px;
+			height:auto;
+		}
+		
+		@mixin atLarge{
+			width:280px;
+			height:auto;
+		}
+		
+	}
+	
+	&__logo-text{		
+		position:absolute;
+		top:70px;
+		left:100px;
+		width:590px;
+		text-align:left;
+		font-family:"Oswald", Sans-serif;
+		color:rgba(223,242,242,1.0);
+		font-weight:400;
+		font-size:1.0rem;
+		text-shadow:2px 2px 6px rgba(22,22,22,0.4);
+		
+		@mixin atMedium{
+			top:85px;
+			left:160px;
+			width:590px;
+			font-size:1.8rem;
+			text-shadow:4px 4px 6px rgba(22,22,22,0.8);
+		}
+		
+				
+		@mixin atLarge{
+			top:150px;
+			left:250px;
+			width:590px;
+			font-size:2.5rem;
+			text-shadow:4px 4px 6px rgba(22,22,22,0.8);
+		}
+			
+	}
+}

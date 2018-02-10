@@ -1,0 +1,70 @@
+.visitors-logo-block{	
+		position:absolute;
+		top:70px;
+		left:20px;		
+		width:550px;
+		/* height:300px;*/
+		/* display:block; */
+		z-index:4;
+		user-select:none;
+		background-color:green;
+		
+		@mixin atSmall{	
+			top:70px;
+			left:20px;		
+			width:450px;
+		
+		}
+									
+		@mixin atMedium{			
+			top:270px;
+			left:20px;		
+			width:250px;
+		}
+		
+		@mixin atLarge{
+			top:70px;
+			left:20px;		
+			width:550px;
+		}
+		
+	&__text{		
+		position:absolute;
+		text-align:left;
+		top:220px;
+		left:120px;
+		width:100%;
+		font-family:"Oswald", Sans-serif;
+		font-size:3.8rem;
+		font-weight:400;
+		color:rgba(223,242,242,1.0);
+		text-shadow:4px 4px 4px rgba(22,22,22,0.4);
+		
+		@mixin atSmall{					
+			top:110px;
+			left:220px;
+			font-size:2.4rem;
+			text-align:left;
+		}
+		
+		@mixin atMedium{					
+			top:100px;
+			left:240px;
+			font-size:2.6rem;
+			text-align:left;
+		}
+		
+		@mixin atLarge{
+			top:270px;
+			left:390px;
+			font-size:3.8rem;
+			text-align:left;
+		}
+	}
+	
+	&__image{
+		width:440px;
+		height:auto;		
+	}
+	
+}

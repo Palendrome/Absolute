@@ -1,30 +1,50 @@
 .site-header{
-	padding:10px 0;
+	padding-top:10px;
+	margin:0;
 	position:fixed;
+	top:0;
+	left:0;
+	height:60px;	
 	width:100%;
 	z-index:2;
-	background-color:rgba($mainBlue,0.3);
-	
+	background-color:rgba($mainBlue,0.7);	
 	
 	@mixin atSmall{
-		
+		display:block;
+		height:60px;
+		padding-top:20px;
+		background-color:rgba($mainBlue,0.4);	
+	}
+	
+	@mixin atMedium{
+		display:block;
+		height:80px;
+		padding-top:20px;
+		background-color:rgba($mainBlue,0.4);	
 	}
 	
 	@mixin atLarge{
-		
+		height:120px;
+		display:block;
+		padding-top:10px;
+		background-color:rgba($mainBlue,0.4);	
 	}
-	
 	
 	&__btn-container{
 		float:right;
 	}
-	
-	
+		
 	&__menu-content {
-		display:none;
+		/* display:none; */
+		padding-top:0px;
 		
 		@mixin atMedium{
 			display:block;
+			padding-top:10px;
+		}
+		
+		@mixin atLarge{			
+			padding-top:50px;
 		}
 	}
 }
