@@ -1,0 +1,540 @@
+.research{
+		position:relative;
+		top:80px;
+		max-width:100%;
+		margin:0;
+		font-size:1rem;
+		font-family:"Oswald",Arial, Helvetica, sans-serif;
+		font-weight:200;		
+		color:#666;
+		text-align:center;	
+
+		@mixin atMedium{
+			top:0;
+			
+		}
+		
+		@mixin atLarge{
+			top:0;
+		}
+		
+		
+		&__green-wrapper{
+			position:relative;			
+			margin:0;			
+			padding:30px 0 100px 0;
+			background-color:$darkGreen;
+		}
+		
+		&__clear-wrapper{
+			position:relative;			
+			margin:0;			
+			padding:30px 0 100px 0;
+			/* background-color:orange; */
+		}
+		
+		&__container{
+			/* position:relative;
+			left:8px; */
+			width:340px;
+			height:300px;
+			margin:0 auto 0 auto;
+			padding:30px 0;			
+			border:1px solid #fff;
+			border-radius:16px;
+			background-attachment: fixed;			
+			background-repeat: no-repeat;
+			background-size: cover;					
+			background-image:url(/assets/images/bottlenose_calf_1600x1080.jpg);
+			background-position: center;
+			/* background-position-x: 200px; */
+			box-shadow: 16px 16px 28px rgba(0, 0, 0, 0.5);
+			
+			@mixin atMedium{
+				left:140px;
+				width:840px;
+				height:auto;
+				background-position-x: 200px;
+			}
+			
+			@mixin atLarge{
+				left:240px;
+				width:1400px;
+				height:auto;
+				background-position-x: 200px;
+			}
+		}
+		
+		
+		&___content{
+			width:80%;
+			margin:60px auto 20px auto;
+			padding:0;
+			font-family:"Roboto",sans-serif;
+			background-color:yellow;
+			height:600px;			
+		}
+		
+		&__picture-one{
+			position:relative;
+			top:0;
+			width:100%;	
+			height:1600px;	
+			font-size:1.4rem;			
+			color:#fff;			
+			background-attachment: fixed;			
+			background-repeat: no-repeat;
+			background-size: cover;			
+			background-image:url(/assets/images/highview_1920x1277.jpg);
+			background-position:0 top;
+			
+			@mixin@  atMedium{
+				background-attachment: fixed;		
+				width:100%;
+				background-size: cover;	
+			}
+			
+			@mixin atLarge{
+				background-attachment: fixed;		
+				width:100%;	
+				background-size: cover;	
+			}
+		}
+		
+		&__picture-two{		
+			position:relative;	
+			top:0;
+			width:100%;
+			height:1600px;		
+			font-size:1.4rem;					
+			text-align:centre;				
+			background-image:url(/assets/images/highview_1920x1277.jpg);
+			background-attachment:fixed;
+			background-position:0 bottom;
+			background-size:cover;
+			background-repeat:no-repeat;			
+			
+			
+			@mixin atMedium{
+				height:1200px;	
+			}
+						
+			@mixin atLarge{
+				height:1400px;	
+			}
+		}
+	
+	
+		&__picture-three{		
+			position:relative;	
+			top:0;
+			width:100%;
+			height:800px;				
+			text-align:centre;		
+			background-image:url(/assets/images/research_dolphins_overhead_1920x1277.jpg);	
+			background-attachment:fixed;
+			background-position:center;
+			background-size:cover;
+			background-repeat:no-repeat;			
+		}
+		
+		&__picture-four{
+			position:relative;			
+			top:0;
+			width:100%;
+			height:1400px;
+			background-image:url(/assets/images/research_dolphins_overhead_1920x1277.jpg);
+			background-attachment:fixed;
+			background-position:center;
+			background-size:cover;
+			background-repeat:no-repeat;						
+		}		
+		
+		
+		&__textbar-one{
+			position:absolute;			
+			top:45%;
+			left:0;
+			width:100%;
+			text-align:center;				
+			font-size:1.4rem;
+			padding:30px 0;
+			color:#fff;
+			text-shadow:12px 12px 6px rgba(0, 0, 0, 0.5);	
+			
+			
+			@mixin atMedium{
+				font-size:2.0rem;
+				top:22%;				
+			}
+			
+			@mixin atLarge{
+				font-size:3.0rem;
+				top:35%;	
+			}
+		}
+				
+		
+		&__textbar-two{
+			position:absolute;	
+			top:-34px;
+			padding:30px 0;
+			left:0;
+			width:100%;
+			text-align:center;	
+			font-size:1.0rem;
+			color:#fff;
+			background-color:rgba(40,130,110,0.5);
+			text-shadow:12px 12px 6px rgba(0, 0, 0, 0.5);
+			
+			
+			@mixin atMedium{
+				top:-22px;
+				font-size:2.0rem;
+			}
+			
+			@mixin atLarge{
+				top:0px;
+				font-size:3.0rem;
+			}
+		}
+						
+		
+		
+		&__video{
+			display:none;
+			position:relative;
+			top:350px;
+			left:0;
+			width:300px;
+			height:auto;
+			border:1px solid #fff;
+			margin:0 0 0 20px;
+			border-radius:15px;
+			box-shadow:8px 8px 12px rgba(0,0,0,0.5);
+			
+			@mixin atMedium{
+				display:inline;
+				top:0;
+				left:10px;
+				width:340px;
+				height:auto;
+				margin:0 0 0 10px;
+				
+			}
+			
+			@mixin atLarge{
+				display:inline;
+				left:20px;
+				width:480px;
+				height:auto;
+				
+			}
+		}
+		
+		&__study-text{
+			/* position:absolute;
+			top:-80px;
+			right:0px; */
+			width:280px;
+			margin:0 auto 0 auto;			
+			padding:0px 20px;		
+			border-radius:15px;			
+			font-size:1.0rem;
+			font-weight:300;
+			text-align:left;
+			background-color:rgba(10,100,90,1.0);	
+			border:1px solid #eee;
+			box-shadow:8px 8px 12px rgba(0,0,0,0.5);
+			
+			
+			@mixin atMedium{
+				position:absolute;
+				top:-50px;
+				right:260px;
+				width:300px;			
+				padding:10px 20px;					
+				font-size:0.9rem;
+			}
+
+			@mixin atLarge{
+				/* position:absolute;
+				top:-90px;
+				right:120px; */
+				width:400px;			
+				padding:10px 20px;					
+				font-size:1.0rem;
+				
+			}
+		}
+		
+		
+		&__fin-container{
+			position:relative;
+			top:80px;
+			width:90%;
+			margin:0 auto 0 auto;
+			border:1px solid #fff;
+			border-radius:16px;
+			background-color:rgba(10,100,90,0.6);
+			box-shadow: 16px 16px 28px rgba(0, 0, 0, 0.5);
+			
+			
+			@mixin atMedium{
+				top:100px;
+				width:70%;	
+			}
+			
+			@mixin atLarge{
+				top:200px;
+				width:70%;	
+				
+			}
+		}
+		
+		&__finstrip{
+			position:relative;									
+			width:90%;			
+			height:auto;
+			margin:20px auto 10px auto;
+			padding:0;		
+			border:1px solid #eee;
+		}
+		
+		&__fin-text{
+			width:90%;
+			margin:20px auto 30px auto;
+			font-size:0.9rem;
+			font-weight:300;
+			text-align:justify;
+			line-height:1.4rem;
+
+			@mixin atMedium{
+				font-size:1.0rem;
+				width:90%;
+				line-height:1.6rem;
+			}
+			
+			@mixin atLarge{
+				font-size:1.3rem;
+				width:90%;
+				line-height:1.8rem;
+			}			
+			
+		}
+		
+		
+		&__textbar-three{
+			position:absolute;	
+			top:0px;
+			padding:0;			
+			left:0;
+			width:100%;
+			font-family:"Roboto",Arial, Helvetica, sans-serif;
+			font-weight:300;
+			text-align:center;				
+			font-size:0.6rem;
+			padding:30px 0;
+			color:#fff;
+			background-color:rgba(10,100,50,0.4);
+			text-shadow:12px 12px 6px rgba(0, 0, 0, 0.5);
+			
+			@mixin atMedium{
+				top:0px;
+				font-size:1.2rem;				
+				width:100%;
+			}
+			
+			@mixin atLarge{				
+				top:0px;
+				font-size:1.8rem;				
+				width:100%;
+			}
+		}
+		
+		&__innerText{
+			width:80%;
+			display:inline-block;			
+			color:#fff;
+			font-size:1.0rem;
+		}
+						 
+		
+		&__picture-floater-one{
+			position:absolute;
+			top:20%;
+			right:10%;
+			width:160px;
+			height:100px;
+			overflow:hidden;
+			border:2px solid #fff;
+			border-radius:12px;
+			background-image:url(/assets/images/dolphins_research_rocks_1920x1277.jpg);	
+			background-repeat: no-repeat;
+			background-size: cover;
+			box-shadow: 20px 20px 28px rgba(0, 0, 0, 0.5);
+			
+			
+			@mixin atMedium{
+				top:32%;
+				right:12%;
+				width:340px;
+				height:200px;
+				
+			}
+			
+			
+			@mixin atLarge{
+				top:26%;
+				right:10%;
+				width:480px;
+				height:320px;
+				
+			}
+		}
+		
+		&__picture-floater-two{
+			position:absolute;
+			top:32%;
+			left:8%;
+			width:160px;
+			height:100px;
+			overflow:hidden;
+			border:2px solid #fff;
+			border-radius:12px;
+			background-image:url(/assets/images/dolphins_research_furrycloseup_1920x1277.jpg);	
+			background-repeat: no-repeat;
+			background-size: cover;
+			box-shadow: 20px 20px 28px rgba(0, 0, 0, 0.5);
+			
+			
+			@mixin atMedium{
+				top:38%;
+				left:8%;
+				width:300px;
+				height:200px;				
+			}
+			
+			@mixin atLarge{
+				top:32%;
+				left:8%;
+				width:480px;
+				height:320px;
+				
+			}
+		}
+			
+	
+		&__backband-blue{
+			position:relative;
+			top:0;
+			width:100%;
+			height:140px;
+			/* background-color: rgba(52,123,183,0.4); */
+			text-align:center;
+			/* z-index:12; */
+		}
+		
+		&__backband-yellow{
+		position:relative;
+		top:60%;
+		width:100%;
+		height:140px;
+		background-color: rgba(258,248,58,0.4);
+		text-align:center;
+	}
+		
+		&__overText{	
+			width:90%;	
+			/*height:180px;*/
+			margin:0px auto 0 auto;	
+			padding:10px 0 0 0;
+			font-size:1.4vw;
+			color:#fff;	
+		}
+			
+		&__band-one{
+		position:relative;
+		top:120px;
+		margin:0;
+		padding:0;
+		top:0;
+		width:100%;
+		height:120px;
+		background-color: rgba(52,123,183,0.4);
+		/* background-color:#13886D; */
+		}
+		
+		
+		&__left{
+			margin:30px 30px;
+			float:left;
+			width:40%;
+		}
+		
+		&__center-content{
+			width:80%;
+			margin:20px auto 0 auto;			
+			text-align:left;
+			color:#fff;
+			font-weight:300;
+			font-size:1.4rem;
+						
+
+			@mixin atMedium{
+				font-size:1.0rem;
+			}	
+		
+		
+			@mixin atLarge{
+				font-size:1.4rem;
+			}
+		}
+				
+				
+		&__row{
+			width:90%;
+			margin:60px auto 20px auto;
+			padding:0;
+			box-sizing: border-box;
+			border:2px solid #fff;
+			@mixin clearfix;
+			font-family:"Roboto",sans-serif;
+		}
+		
+				
+		&__row-50{			
+			float:left;			
+			width:50%;
+			text-align:left;			
+			border-right:2px solid #fff;
+			
+		}
+		
+		
+		&__row-40{
+			float:left;
+			width:50%;
+			text-align:justify;
+			color:#fff;
+			font-weight:300;
+			font-size:1.4rem;
+			line-height:1.4rem;
+			
+			padding:20px 40px 0 140px;
+			text-align:left;
+			
+			@mixin clearfix;
+			
+						
+			@mixin atMedium{
+				font-size:1.0rem;
+				line-height:1.8rem;
+			}
+			
+			@mixin atLarge{
+				font-size:1.4rem;
+			}
+			
+		}
+}	

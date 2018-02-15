@@ -40,10 +40,10 @@
 		
 	}
 	
-	a{
+	/* a{
 		text-decoration:none;
 		color:$mainCyan;
-	}
+	} */
 	
 	&__link{		
 		text-decoration:none;
@@ -90,17 +90,17 @@
 		
 		@mixin atSmall{
 			float:left;
-			width:50%;
+			width:40%;
 			padding:0 40px;
 		}
 		
 		@mixin atMedium{
 			float:left;
-			width:50%;
+			width:40%;
 		}
 		@mixin atLarge{
 			float:left;
-			width:50%;
+			width:45%;
 		}
 	}
 			

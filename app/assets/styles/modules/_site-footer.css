@@ -5,6 +5,9 @@
 	background-color:rgba($mainBlue,1.0);
 	color:#fff;
 	padding:0.2rem 0;
+	font-family:"Roboto", Sans-serif;
+	font-size:1.0rem;
+	font-weight:400;
 	text-align:center;
 	font-size:1.0rem;
 	width:100%;

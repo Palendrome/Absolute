@@ -40,7 +40,7 @@
 		
 		@mixin atMedium{
 			display:block;
-			padding-top:10px;
+			padding-top:20px;
 		}
 		
 		@mixin atLarge{			

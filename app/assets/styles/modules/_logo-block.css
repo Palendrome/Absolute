@@ -1,25 +1,22 @@
 .logo-block{
 		position:absolute;
 		top:0px;
-		left:80px;
+		left:40px;
 		width:250px;		
 		z-index:4;
-		user-select:none;
-		/* background-color:rgba(200,240,190,0.5); */
+		user-select:none;		
 		line-height:2.8rem;
 		
 		@mixin atSmall{			
 			top:8px;
 			left:6px;		
 			width:260px;
-			/* display:inline-block; */
 		}
 									
 		@mixin atMedium{			
 			top:10px;
 			left:12px;		
 			width:440px;
-			/* display:inline-block; */
 		}
 		
 		@mixin atLarge{
@@ -32,8 +29,8 @@
 	&__text{		
 		position:absolute;
 		text-align:left;
-		top:62px;
-		left:16px;
+		top:12px;
+		left:0px;
 		width:100%;
 		font-family:"Oswald", Sans-serif;
 		font-size:2.0rem;
@@ -49,16 +46,16 @@
 		}
 		
 		@mixin atMedium{					
-			top:135px;
-			left:250px;
-			font-size:2.6rem;
+			top:22px;
+			left:180px;
+			font-size:1.8rem;
 			text-align:left;
 		}
 		
 		@mixin atLarge{
-			top:200px;
-			left:370px;
-			font-size:4.0rem;
+			top:35px;
+			left:250px;
+			font-size:3.0rem;
 			text-align:left;
 			}
 		
@@ -66,7 +63,7 @@
 	}
 	
 	&__image{
-			width:200px;
+			width:180px;
 			height:auto;
 			
 			@mixin atSmall{			
@@ -75,14 +72,13 @@
 			}
 			
 			@mixin atMedium{			
-				width:300px;
+				width:200px;
 				height:auto;
 			}
 			
 			@mixin atLarge{
-				width:420px;
+				width:280px;
 				height:auto;
 			}
 	}
-		
 }

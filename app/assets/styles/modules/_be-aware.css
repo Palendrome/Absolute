@@ -1,6 +1,26 @@
-.be-aware{
-	position:relative;
-	top:0;
-	left:0;
+.be-aware{	
+	position:absolute;
+	bottom:70px;
+	right:100px;
+	font-family:"Oswald",Arial,sans-serif;
+	font-size:2rem;
+	font-weight:200;
+	
+	&__large-text{
+		font-size:3.0rem;		
+	}
+	
+	&__small-text{
+		font-size:1.4rem;
+	}
+	
+	&__eye{
+		position:absolute;
+		top:6px;
+		left:120px;
+		width:80px;
+		height:auto;		
+	}
+	
 }
 		
