@@ -1,10 +1,10 @@
 .logo-block{
-		position:absolute;
+		position:fixed;
 		top:0px;
 		left:40px;
 		width:250px;		
 		z-index:4;
-		user-select:none;		
+		/* user-select:none;		 */
 		line-height:2.8rem;
 		
 		@mixin atSmall{			
@@ -16,7 +16,7 @@
 		@mixin atMedium{			
 			top:10px;
 			left:12px;		
-			width:440px;
+			width:250px;
 		}
 		
 		@mixin atLarge{
@@ -32,9 +32,11 @@
 		top:12px;
 		left:0px;
 		width:100%;
+		user-select:none;
+		cursor:default;
 		font-family:"Oswald", Sans-serif;
 		font-size:2.0rem;
-		font-weight:400;
+		font-weight:300;
 		color:rgba(223,242,242,1.0);
 		text-shadow:4px 4px 4px rgba(22,22,22,0.4);
 		
@@ -50,6 +52,7 @@
 			left:180px;
 			font-size:1.8rem;
 			text-align:left;
+			user-select:none;
 		}
 		
 		@mixin atLarge{

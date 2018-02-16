@@ -9,12 +9,12 @@
 	
 	@mixin atMedium{
 		line-height:1.4;
-		margin-bottom:200px;
+		margin-bottom:80px;
 	}	
 	
 	@mixin atLarge{
 		line-height:1.6;
-		margin-bottom:230px;
+		margin-bottom:90px;
 	}
 	
 	strong{		

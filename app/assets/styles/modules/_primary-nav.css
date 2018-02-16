@@ -51,7 +51,7 @@
 	}
 	
 	a:hover{
-		background-color:rgba($mainBlue,0.6);
+		background-color:rgba(64,178,140,0.6);
 	}
 	
 	#current a{

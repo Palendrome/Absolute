@@ -20,14 +20,14 @@
 		display:block;
 		height:80px;
 		padding-top:20px;
-		background-color:rgba($mainBlue,0.5);	
+		background-color:rgba($mainBlue,0.7);	
 	}
 	
 	@mixin atLarge{
 		height:120px;
 		display:block;
 		padding-top:10px;
-		background-color:rgba($mainBlue,0.5);	
+		background-color:rgba($mainBlue,0.7);	
 	}
 	
 	&__btn-container{
