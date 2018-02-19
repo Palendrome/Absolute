@@ -1,7 +1,7 @@
 .logo-block{
 		position:fixed;
-		top:0px;
-		left:40px;
+		top:90px;
+		left:60px;
 		width:250px;		
 		z-index:4;
 		/* user-select:none;		 */
@@ -29,7 +29,7 @@
 	&__text{		
 		position:absolute;
 		text-align:left;
-		top:12px;
+		top:70px;
 		left:0px;
 		width:100%;
 		user-select:none;
@@ -39,6 +39,7 @@
 		font-weight:300;
 		color:rgba(223,242,242,1.0);
 		text-shadow:4px 4px 4px rgba(22,22,22,0.4);
+		z-index:6;
 		
 		@mixin atSmall{					
 			top:110px;
@@ -49,7 +50,7 @@
 		
 		@mixin atMedium{					
 			top:22px;
-			left:180px;
+			left:210px;
 			font-size:1.8rem;
 			text-align:left;
 			user-select:none;
@@ -57,7 +58,7 @@
 		
 		@mixin atLarge{
 			top:35px;
-			left:250px;
+			left:280px;
 			font-size:3.0rem;
 			text-align:left;
 			}
@@ -66,6 +67,9 @@
 	}
 	
 	&__image{
+		position:absolute;
+			left:30px;
+			right:0;
 			width:180px;
 			height:auto;
 			

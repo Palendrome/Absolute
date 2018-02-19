@@ -11,12 +11,14 @@
 	
 	@mixin atSmall{
 		display:block;
+		width:100%;
 		height:60px;
 		padding-top:20px;
 		background-color:rgba($mainBlue,0.5);	
 	}
 	
 	@mixin atMedium{
+		width:100%;
 		display:block;
 		height:80px;
 		padding-top:20px;
@@ -24,6 +26,7 @@
 	}
 	
 	@mixin atLarge{
+		width:100%;
 		height:120px;
 		display:block;
 		padding-top:10px;
@@ -34,16 +37,19 @@
 		float:right;
 	}
 		
-	&__menu-content {
-		/* display:none; */
+	&__menu-content {		
 		padding-top:0px;
+		padding-left:10px;
+		width:100%;
 		
 		@mixin atMedium{
 			display:block;
 			padding-top:20px;
+			width:100%;
 		}
 		
-		@mixin atLarge{			
+		@mixin atLarge{	
+			width:100%;		
 			padding-top:50px;
 		}
 	}

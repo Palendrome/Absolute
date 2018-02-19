@@ -18,15 +18,15 @@
 	
 	&__be-aware{
 		position:absolute;
-		right:50px;
-		bottom:80px;
-		width:140px;
+		right:20px;
+		bottom:70px;
+		width:60px;
 		height:auto;
 		
 		@mixin atMedium{
-			right:50px;
-			bottom:80px;
-			width:100px;
+			right:20px;
+			bottom:70px;
+			width:90px;
 			height:auto;
 			
 		}
