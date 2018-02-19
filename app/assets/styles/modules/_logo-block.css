@@ -1,30 +1,117 @@
 .logo-block{
-		position:fixed;
-		top:90px;
+		position:absolute;
+		top:10px;
 		left:60px;
 		width:250px;		
-		z-index:4;
-		/* user-select:none;		 */
-		line-height:2.8rem;
+		z-index:4;		
+		line-height:2.8rem; 
 		
-		@mixin atSmall{			
+		@mixin atSmall{	
+			position:fixed;
 			top:8px;
 			left:6px;		
 			width:260px;
 		}
 									
-		@mixin atMedium{			
+		@mixin atMedium{	
+			position:fixed;
 			top:10px;
 			left:12px;		
 			width:250px;
 		}
 		
 		@mixin atLarge{
+			position:fixed;
 			top:12px;
 			left:20px;
 			width:450px;
 			line-height:1.2;			
 		}
+	 	
+	&--research{
+		position:absolute;
+		top:220px;
+		left:60px;
+
+		@mixin atSmall{	
+			position:fixed;
+			top:8px;
+			left:6px;		
+			width:260px;
+		}
+									
+		@mixin atMedium{	
+			position:fixed;
+			top:10px;
+			left:12px;		
+			width:250px;
+		}
+		
+		@mixin atLarge{
+			position:fixed;
+			top:12px;
+			left:20px;
+			width:450px;
+			line-height:1.2;			
+		}
+	}
+	
+	
+	&--art{
+		position:absolute;
+		top:70px;
+		left:60px;
+
+		@mixin atSmall{	
+			position:fixed;
+			top:8px;
+			left:6px;		
+			width:260px;
+		}
+									
+		@mixin atMedium{	
+			position:fixed;
+			top:10px;
+			left:12px;		
+			width:250px;
+		}
+		
+		@mixin atLarge{
+			position:fixed;
+			top:12px;
+			left:20px;
+			width:450px;
+			line-height:1.2;			
+		}
+	}
+		
+		&--about{
+			position:absolute;
+			top:160px;
+			left:60px;
+
+		@mixin atSmall{	
+			position:fixed;
+			top:8px;
+			left:6px;		
+			width:260px;
+		}
+									
+		@mixin atMedium{	
+			position:fixed;
+			top:10px;
+			left:12px;		
+			width:250px;
+		}
+		
+		@mixin atLarge{
+			position:fixed;
+			top:12px;
+			left:20px;
+			width:450px;
+			line-height:1.2;			
+		}
+	}
 	
 	&__text{		
 		position:absolute;
@@ -87,5 +174,5 @@
 				width:280px;
 				height:auto;
 			}
-	}
+	} 
 }

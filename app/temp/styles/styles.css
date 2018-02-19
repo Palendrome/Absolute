@@ -685,7 +685,7 @@ a:visited{
 	color:#fff;
 	padding:0;
 	font-family:"Roboto", Sans-serif;
-	font-size:1.0rem;
+	font-size:0.6rem;
 	font-weight:300;
 	text-align:center;	
 	width:100%;
@@ -725,6 +725,30 @@ a:visited{
 		cursor:default;		
 	} */
 }
+
+@media (min-width:640px)
+	{
+
+.site-footer{
+		font-size:1.0rem
+}
+	}
+
+@media (min-width:960px)
+	{
+
+.site-footer{
+		font-size:0.8rem
+}
+	}
+
+@media (min-width:1400px)
+	{
+
+.site-footer{
+		font-size:1.0rem
+}
+	}
 
 .site-footer__be-aware{
 		position:absolute;
@@ -768,7 +792,7 @@ a:visited{
 	position:fixed;
 	top:0;
 	left:0;
-	height:60px;	
+	height:80px;	
 	width:100%;
 	z-index:2;
 	background-color: rgba(47,85,114,0.7);
@@ -843,7 +867,7 @@ a:visited{
 	{
 
 .primary-nav--pull-right{
-			/* float:right; */
+			float:right
 	}
 	}
 
@@ -851,7 +875,7 @@ a:visited{
 	{
 
 .primary-nav--pull-right{
-			/* float:right; */
+			float:right;
 			margin-right:30px
 	}
 	}
@@ -860,7 +884,7 @@ a:visited{
 	{
 
 .primary-nav--pull-right{
-			/* float:right; */
+			float:right;
 			margin-right:30px
 	}
 	}
@@ -878,7 +902,7 @@ a:visited{
 
 .primary-nav li{
 		list-style:none;
-		/* float:left; */
+		float:left;
 		padding:0;
 	}
 
@@ -943,32 +967,33 @@ a:visited{
 	}
 
 .logo-block{
-		position:fixed;
-		top:90px;
+		position:absolute;
+		top:10px;
 		left:60px;
 		width:250px;		
-		z-index:4;
-		/* user-select:none;		 */
-		line-height:2.8rem;
+		z-index:4;		
+		line-height:2.8rem; 
 }
 
 @media (min-width:640px)
 	{
 
-.logo-block{			
+.logo-block{	
+			position:fixed;
 			top:8px;
 			left:6px;		
-			width:260px
+			width:260px 
 }
 	}
 
 @media (min-width:960px)
 	{
 
-.logo-block{			
+.logo-block{	
+			position:fixed;
 			top:10px;
 			left:12px;		
-			width:250px
+			width:250px 
 }
 	}
 
@@ -976,11 +1001,132 @@ a:visited{
 	{
 
 .logo-block{
+			position:fixed;
+			top:12px;
+			left:20px;
+			width:450px;
+			line-height:1.2 
+}
+	}
+
+.logo-block--research{
+		position:absolute;
+		top:220px;
+		left:60px;
+	}
+
+@media (min-width:640px)
+	{
+
+.logo-block--research{	
+			position:fixed;
+			top:8px;
+			left:6px;		
+			width:260px
+	}
+	}
+
+@media (min-width:960px)
+	{
+
+.logo-block--research{	
+			position:fixed;
+			top:10px;
+			left:12px;		
+			width:250px
+	}
+	}
+
+@media (min-width:1400px)
+	{
+
+.logo-block--research{
+			position:fixed;
 			top:12px;
 			left:20px;
 			width:450px;
 			line-height:1.2
-}
+	}
+	}
+
+.logo-block--art{
+		position:absolute;
+		top:70px;
+		left:60px;
+	}
+
+@media (min-width:640px)
+	{
+
+.logo-block--art{	
+			position:fixed;
+			top:8px;
+			left:6px;		
+			width:260px
+	}
+	}
+
+@media (min-width:960px)
+	{
+
+.logo-block--art{	
+			position:fixed;
+			top:10px;
+			left:12px;		
+			width:250px
+	}
+	}
+
+@media (min-width:1400px)
+	{
+
+.logo-block--art{
+			position:fixed;
+			top:12px;
+			left:20px;
+			width:450px;
+			line-height:1.2
+	}
+	}
+
+.logo-block--about{
+			position:absolute;
+			top:160px;
+			left:60px;
+	}
+
+@media (min-width:640px)
+	{
+
+.logo-block--about{	
+			position:fixed;
+			top:8px;
+			left:6px;		
+			width:260px
+	}
+	}
+
+@media (min-width:960px)
+	{
+
+.logo-block--about{	
+			position:fixed;
+			top:10px;
+			left:12px;		
+			width:250px
+	}
+	}
+
+@media (min-width:1400px)
+	{
+
+.logo-block--about{
+			position:fixed;
+			top:12px;
+			left:20px;
+			width:450px;
+			line-height:1.2
+	}
 	}
 
 .logo-block__text{		
@@ -1119,8 +1265,8 @@ a:visited{
 .visitors-hero__strapline{
 		position:absolute;
 		top:180px;
-		left:100px;
-		font-size:0.6rem;
+		left:120px;
+		font-size:0.5rem;
 		font-weight:300;
 		text-shadow:2px 2px 6px rgba(22,22,22,0.4);
 		z-index:6;
@@ -1149,11 +1295,12 @@ a:visited{
 	}
 
 .visitors-hero__logo{
-		position:absolute;		
-		top:80px;
+		position:relative;		
+		/* top:80px;
 		left:20px;
-		/* width:90px; */
+		width:90%; */
 		/* height:auto; */
+		background-color:orange;
 		z-index:2;
 	}
 
@@ -1176,16 +1323,22 @@ a:visited{
 	}
 
 .visitors-hero__logo-image{
+		position:absolute;
+		top:90px;
+		left:10px;
 		width:90px;
 		height:auto;
+		z-index:2;
 		
 	}
 
 @media (min-width:960px)
 	{
 
-.visitors-hero__logo-image{			
-			width:200px;
+.visitors-hero__logo-image{
+			top:110px;
+			left:20px;			
+			width:220px;
 			height:auto
 		
 	}
@@ -1195,22 +1348,23 @@ a:visited{
 	{
 
 .visitors-hero__logo-image{
-			width:320px;
+			top:150px;
+			left:20px;
+			width:360px;
 			height:auto
 		
 	}
 	}
 
 .visitors-hero__logo-text{		
-		position:absolute;
-		top:60px;
-		left:90px;
-		width:590px;
+		position:absolute;				
+		top:145px;
+		left:92px;		
 		text-align:left;
 		font-family:"Oswald", Sans-serif;
 		color:rgba(223,242,242,1.0);
 		font-weight:400;
-		font-size:0.9rem;
+		font-size:0.8rem;
 		text-shadow:2px 2px 6px rgba(22,22,22,0.4);
 			
 	}
@@ -1219,8 +1373,8 @@ a:visited{
 	{
 
 .visitors-hero__logo-text{
-			top:120px;
-			left:180px;
+			top:240px;
+			left:216px;
 			width:590px;
 			font-size:2.5rem;
 			text-shadow:3px 3px 6px rgba(22,22,22,0.5)
@@ -1232,8 +1386,8 @@ a:visited{
 	{
 
 .visitors-hero__logo-text{
-			top:190px;
-			left:290px;
+			top:370px;
+			left:340px;
 			width:590px;
 			font-size:3.5rem;
 			text-shadow:4px 4px 6px rgba(22,22,22,0.4)
@@ -2088,8 +2242,8 @@ a:visited{
 		width:100%;
 		padding:20px 60px 20px 60px;
 		background-color:rgba(250,250,250,1);
-		font-size:1.0rem;
-		line-height:1.6rem;
+		font-size:0.9rem;
+		line-height:1.2rem;
 	}
 
 @media (min-width:960px)
@@ -2178,20 +2332,47 @@ a:visited{
 		width:100%;
 		text-align:center;
 		color:#000;
-		font-size:27px;
-		letter-spacing:8px;
+		font-size:1.0rem;
+		letter-spacing:4px;
 		text-transform:uppercase;
-		}
+	}
+
+@media (min-width:640px)
+	{
+
+.about__ptext{
+			font-size:27px;
+			letter-spacing:8px
+	}
+	}
+
+@media (min-width:960px)
+	{
+
+.about__ptext{
+			font-size:27px;
+		letter-spacing:8px
+	}
+	}
+
+@media (min-width:1400px)
+	{
+
+.about__ptext{
+			font-size:27px;
+		letter-spacing:8px
+	}
+	}
 
 .about__guardian{
 		background-color:rgba(50,91,122,1);
 		position:relative;
-		left:260px;		
+		left:0px;		
 		border-radius:16px;		
 		text-align:left;		
-		width:60%;
+		width:90%;
 		/* overflow:hidden;		 */
-		margin:30px 8px 12px 20px;
+		margin:30px 8px 60px 8px;
 		
 	}
 
@@ -2214,10 +2395,10 @@ a:visited{
 	}
 
 .about__guardian-header-panel{
-		display:none;
+		display:none;		
 		position:absolute;		
 		width:980px;
-		height:200px;
+		height:200px;		
 		background-color:#05CACF;
 		border-radius:16px;
 		z-index:-1;
@@ -2242,9 +2423,9 @@ a:visited{
 	}
 
 .about__logo-thumb{	
-		/* position:relative;		 */
-		margin:30px 0 0 20px;
-		width:460px;
+		/* position:relative; */
+		margin:30px 0 0 0px;
+		width:140px;
 		height:auto;	
 		vertical-align:top;
 		
@@ -2287,13 +2468,13 @@ a:visited{
 
 .about__bold-title{
 		position:absolute;
-		top:20px;
-		left:360px;			
+		top:140px;
+		left:-40px;			
 		font-family:Tahoma, Geneva, sans-serif;
-		font-size:1.6rem;
+		font-size:0.9rem;
 		font-weight:bold;
 		color:#fff;
-		margin:0px 0 0 -100px;
+		margin:0px 0 0 70px;
 		text-shadow:2px 2px 6px rgba(0,0,0,0.4);
 		
 		
@@ -2316,7 +2497,7 @@ a:visited{
 
 .about__bold-title{			
 			top:70px;
-			left:390px;	
+			left:200px;	
 			font-size:1.9rem
 		
 		
@@ -2325,14 +2506,14 @@ a:visited{
 
 .about__guardian-text{
 		position:relative;
-		top:-130px;
-		left:350px;
+		top:30px;
+		left:10px;
 		margin:10px 0 0 0px;
-		width:640px;	
+		width:290px;	
 		color:#fff;
+		font-size:0.7rem;
+		line-height:1.0rem;
 	}
-
-/* text-align:justify; */
 
 @media (min-width:960px)
 	{
@@ -2378,22 +2559,23 @@ a:visited{
 
 .art__header{
 		position:relative;	
-		top:0px;
+		top:190px;
 		background: url(/assets/images/ronel_paints_1280_1000.jpg);
 		background-repeat: no-repeat;
-		background-size: cover;				
-		background-position:0 -380px;
+		background-size: contain;				
+		background-position:top;
 		width:100%;
 		height:1000px;
-		background-color:gray;
+		background-color:#2f5572;
 	}
 
 @media (min-width:960px)
 	{
 
-.art__header{
+.art__header{			
 			top:0px;
 			height:740px;
+			background-size: cover;		
 			background-position:0 -250px
 	}
 	}
@@ -2404,19 +2586,20 @@ a:visited{
 .art__header{
 			top:0px;
 			height:1000px;
+			background-size: cover;		
 			background-position:0 -360px
 	}
 	}
 
 .art__image-text-one{
 		position:absolute;	
-		top:580px;
-		left:780px;
+		top:358px;
+		left:120px;
 		color:#fff;
 		width:auto;
 		height:400px;
 		font-family:"Roboto",arial,sans-serif;
-		font-size:5rem;
+		font-size:1.5rem;
 		font-weight:200;
 		text-shadow:4px 4px 8px rgba(0,0,0,1.0);
 	}
@@ -2443,13 +2626,13 @@ a:visited{
 
 .art__image-text-two{
 		position:absolute;	
-		top:62px;
-		left:1112px;
+		top:384px;
+		left:164px;
 		color:#fff;
 		width:auto;
 		height:400px;
 		font-family:"Roboto",arial,sans-serif;
-		font-size:5rem;
+		font-size:1.5rem;
 		font-weight:200;
 		text-shadow:4px 4px 8px rgba(0,0,0,1.0);
 	}

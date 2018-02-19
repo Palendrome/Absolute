@@ -4,37 +4,39 @@
 	
 	&__header{
 		position:relative;	
-		top:0px;
+		top:190px;
 		background: url(/assets/images/ronel_paints_1280_1000.jpg);
 		background-repeat: no-repeat;
-		background-size: cover;				
-		background-position:0 -380px;
+		background-size: contain;				
+		background-position:top;
 		width:100%;
 		height:1000px;
-		background-color:gray;
+		background-color:$mainBlue;
 		
-		@mixin atMedium{
+		@mixin atMedium{			
 			top:0px;
 			height:740px;
+			background-size: cover;		
 			background-position:0 -250px;
 		}
 		
 		@mixin atLarge{
 			top:0px;
 			height:1000px;
+			background-size: cover;		
 			background-position:0 -360px;
 		}
 	}
 	
 	&__image-text-one{
 		position:absolute;	
-		top:580px;
-		left:780px;
+		top:358px;
+		left:120px;
 		color:#fff;
 		width:auto;
 		height:400px;
 		font-family:"Roboto",arial,sans-serif;
-		font-size:5rem;
+		font-size:1.5rem;
 		font-weight:200;
 		text-shadow:4px 4px 8px rgba(0,0,0,1.0);
 		
@@ -55,13 +57,13 @@
 	
 	&__image-text-two{
 		position:absolute;	
-		top:62px;
-		left:1112px;
+		top:384px;
+		left:164px;
 		color:#fff;
 		width:auto;
 		height:400px;
 		font-family:"Roboto",arial,sans-serif;
-		font-size:5rem;
+		font-size:1.5rem;
 		font-weight:200;
 		text-shadow:4px 4px 8px rgba(0,0,0,1.0);
 		

@@ -6,7 +6,7 @@
 	color:#fff;
 	padding:0;
 	font-family:"Roboto", Sans-serif;
-	font-size:1.0rem;
+	font-size:0.6rem;
 	font-weight:300;
 	text-align:center;	
 	width:100%;
@@ -15,6 +15,21 @@
 	cursor:default;	
 	border-top:1px solid #fff;
 	z-index:12;
+	
+	@mixin atSmall{
+		font-size:1.0rem;
+		
+	}
+	
+	@mixin atMedium{
+		font-size:0.8rem;
+		
+	}
+	
+	@mixin atLarge{
+		font-size:1.0rem;
+		
+	}
 	
 	&__be-aware{
 		position:absolute;
