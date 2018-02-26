@@ -3,7 +3,7 @@
 	top:80px;	
 	width:100%;
 	height:100%;
-	overflow:hidden;
+	/* overflow:hidden; */
 	user-select:none;
 	cursor:default;
 	line-height:1.6rem;
@@ -56,18 +56,22 @@
 		}
 		
 	}
-
-	&__image{
+	
+	
+	&__image{				
 		width:100%;		
 		margin:0;
 		padding:0;
 		display:block;
 		border-style:none;
+		/* z-index:-2; */
+		
 	}
 	
 	&__video-content{
 		width:100%;
-		display:block;
+		height:auto;
+		display:block; 
 		z-index:-1;
 	}
 	
@@ -91,4 +95,12 @@
 			font-size:1.2rem;
 		}
 	}
+}
+
+#intro-image{	
+	display:none;
+}
+
+#quote{	
+	display:none;
 }
