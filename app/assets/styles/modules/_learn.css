@@ -1,0 +1,244 @@
+.learn{
+	
+	
+	&__header{
+		position:relative;	
+		top:0px;
+		background: url(/assets/images/huge-waves_1280x720.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;				
+		background-position:bottom; 
+		width:100%;
+		height:1200px;		
+		border-bottom:6px solid #eee;
+		background-color:$mainBlue;
+		
+		@mixin atSmall{
+			
+			
+		}
+		
+		@mixin atMedium{
+			background: url(/assets/images/huge-waves_1280x720.jpg);
+			background-size: cover;				
+			background-position:0 -300px;
+			height:640px;			
+		}
+		
+		
+		@mixin atLarge{
+			background: url(/assets/images/huge-waves_1600x1200.jpg);
+			background-size: cover;	
+			background-position:bottom; 
+			height:1200px;			
+		}
+	}
+	
+	&__picture-framed{
+		position:absolute;
+		top:360px;
+		left:70px;
+		width:180px;
+		height:auto;
+		border:2px solid #fff;
+		box-shadow:8px 8px 16px rgba(0,0,0,0.5);
+		
+		@mixin atSmall{
+			top:240px;
+			left:800px;
+			width:400px;
+			
+		}
+		
+		@mixin atMedium{
+			top:180px;
+			left:580px;
+			width:260px;
+			
+		}
+		
+		@mixin atLarge{
+			top:240px;
+			left:800px;
+			width:400px;
+			
+		}
+	}
+	
+	&__title{
+		position:absolute;
+		top:310px;
+		left:90px;
+		font-family:"Roboto",sans-serif;
+		font-size:3rem;
+		font-weight:200;
+		text-shadow:4px 4px 8px rgba(0,0,0,0.6);
+		
+		@mixin atSmall{
+			top:360px;
+			left:600px;			
+			font-size:9rem;
+			font-weight:200;
+		}
+		
+		@mixin atMedium{
+			top:260px;
+			left:400px;			
+			font-size:5.5rem;
+			font-weight:200;
+		}
+		
+		@mixin atLarge{
+			top:360px;
+			left:600px;			
+			font-size:9rem;
+			font-weight:200;
+		}
+	}
+	
+	&__headline{
+		position:relative;
+		top:20px;
+		left:40px;
+		font-family:"Roboto",sans-serif;
+		font-size:2rem;
+		font-weight:200;
+		text-shadow:4px 4px 8px rgba(0,0,0,0.6);
+		
+		@mixin atSmall{
+			top:10px;
+			left:40px;			
+			font-size:6rem;			
+		}
+		
+		@mixin atMedium{			
+			top:30px;
+			left:220px;			
+			font-size:4.0rem;
+		}
+		
+		@mixin atLarge{
+			top:30px;
+			left:310px;		
+			font-size:6rem;
+			
+		}
+	}
+	
+	&__wrap{
+		/* display:inline-block; */
+		vertical-align:top;
+		width:90%;
+		text-align:justify;
+		margin:20px 0 30px 8px;
+		padding-left:20px;
+		font-size:0.8rem;
+		line-height:1.0rem;
+		
+		@mixin atSmall{
+			width:80%;
+			display:inline-block;
+			font-size:0.6rem;
+			line-height:1.2rem;
+		}
+		
+		@mixin atMedium{
+			width:40%;
+			display:inline-block;
+			font-size:0.8rem;
+			line-height:1.2rem;
+			margin:20px 0 30px 200px;
+		}
+		
+		@mixin atLarge{
+			width:40%;
+			display:inline-block;
+			font-size:1.2rem;
+			line-height:1.5rem;
+			margin:20px 0 30px 290px;
+			
+		}
+	}
+	
+	&__wrap--narrow{
+		margin-left:40px;
+		margin-top:20px;
+		width:70%;
+		font-size:0.8rem;
+		text-align:justify;
+		
+		 @mixin atSmall{
+			width:40%;
+			display:inline-block;
+			font-size:0.6rem;
+			line-height:1.2rem;
+		}
+		
+		@mixin atMedium{
+			width:34%;
+			display:inline-block;
+			font-size:1.0rem;
+			line-height:1.2rem;
+			margin:20px 0 30px 20px;
+		}
+		
+		@mixin atLarge{
+			width:34%;
+			display:inline-block;
+			font-size:1.2rem;
+			line-height:1.5rem;
+			margin:20px 0 30px 20px;
+			
+		}
+	}
+	
+	&__pictext{
+		
+	}
+	
+	&__text-pic01{
+		/* width:80%; */
+		margin:20px 0 20px 0;
+		border:2px solid #fff;
+		border-radius:15px;		
+	}
+	
+	&__text-pic02{
+		/* width:80%; */
+		margin:20px 0 20px 0;
+		border:2px solid #fff;
+		border-radius:15px;		
+		
+		
+	}
+	
+	&__reference{		
+		margin-bottom:100px;
+		margin-left:10px;
+		font-size:0.6rem;
+		line-height:1.0rem;
+		width:90%;
+			
+			@mixin atSmall{
+				font-size:0.6rem;
+				line-height:1.0rem;
+				width:60%;
+			}
+			
+			@mixin atMedium{
+				font-size:0.6rem;
+				line-height:1.0rem;
+				margin-left:60px;
+				width:80%;
+			}
+			
+			@mixin atLarge{
+				font-size:0.9rem;
+				line-height:1.4rem;					
+				margin-bottom:100px;
+				margin-left:60px;
+				width:80%;
+			}
+				
+	}
+}

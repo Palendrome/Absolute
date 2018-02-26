@@ -1,0 +1,276 @@
+.emergency{
+	
+	
+	&__header{
+		position:relative;
+		
+	}
+
+	&__wrapper{
+		width:90%;
+		overflow:hidden;
+		/* padding-left:20px;
+		padding-right:20px; */
+		max-width:1400px;
+		margin-left:auto;
+		margin-right:auto;
+	
+		@mixin atSmall{
+			width:90%;
+			max-width:940px;
+			/* padding-left:18px;
+			padding-right:18px;		 */
+		}
+		
+		@mixin atMedium{
+			width:65%;
+			/* padding-left:20px;
+			padding-right:20px; */
+			max-width:1200px;		
+		}
+		
+		@mixin atLarge{
+			width:70%;
+			/* padding-left:40px;
+			padding-right:40px; */
+			max-width:1820px;		
+		}
+	}
+	
+	&__picture-one{		
+		top:140px;
+		height:120px;		
+		background-attachment: fixed;			
+		background-repeat: no-repeat;
+		background-size: contain;			
+		background-image:url(/assets/images/whale-entanglement__1280x840.jpg);
+		background-position:center;
+		background-color:green;
+		
+		@mixin atSmall{
+			height:460px;
+			background-position:center;
+			background-image:url(/assets/images/whale-entanglement_1280x840.jpg);
+		}
+		
+		
+		@mixin atMedium{
+			height:460px;
+			background-position:center;
+			background-size: cover;
+			background-image:url(/assets/images/whale-entanglement_1280x840.jpg);
+		}
+		
+		@mixin atLarge{
+			height:720px;
+			background-position:center;
+			background-size: cover;
+			background-image:url(/assets/images/whale-entanglement_1280x840.jpg);
+		}
+	}
+	
+	&__title{
+		position:absolute;
+		top:540px;
+		left:680px;
+		font-family:"Roboto",sans-serif;
+		font-size:6rem;
+		font-weight:200;
+		text-shadow:4px 4px 6px rgba(0,0,0,0.5);
+		
+		@mixin atSmall{
+			top:540px;
+			left:680px;			
+			font-size:6rem;
+		}
+		
+		
+		@mixin atMedium{
+			top:340px;
+			left:520px;			
+			font-size:4rem;
+		}
+		
+		@mixin atLarge{			
+			top:540px;
+			left:680px;			
+			font-size:6rem;
+		}
+		
+	}
+	
+	&__header-text{
+		width:80%;
+		margin:60px auto 0 auto;
+		font-size:1.0rem;
+	
+	
+		@mixin atSmall{					
+			font-size:6rem;
+		}
+		
+		
+		@mixin atMedium{				
+			font-size:1.0rem;
+			margin:40px auto 0 auto;
+		}
+		
+		@mixin atLarge{	
+			font-size:1.5rem;
+		}
+	}
+	
+	&__menus{		
+		width:90%;
+		margin:10px auto 20px auto;
+		padding:8px 8px;
+		/* border:1px  solid #fff; */
+		font-size:0.8rem;
+		
+		@mixin atSmall{
+			width:60%;
+			margin:60px auto 80px auto;
+			padding:40px 40px;		
+			font-size:1.0rem;
+			
+		}
+				
+		@mixin atMedium{
+			width:60%;
+			margin:60px auto 80px auto;
+			padding:40px 40px;			
+			font-size:1.2rem;
+		}
+		
+		@mixin atLarge{
+			width:68%;
+			margin:60px auto 80px auto;
+			padding:40px 40px;			
+			font-size:1.4rem;
+		}
+	}
+		
+	&__lists{		
+		margin-left:0px;
+		list-style-type:none;
+		color:#fff;
+		text-decoration:none;
+		line-height:1.4rem;
+		list-style-position:inside;
+		
+		
+		@mixin atSmall{
+			margin-left:140px;
+			
+		}
+				
+		@mixin atMedium{
+			margin-left:100px;
+		}
+		
+		@mixin atLarge{
+			margin-left:140px;
+		}
+	}
+	
+	&__container{
+		padding:60px;
+	}
+	
+	&__heading{	
+		padding-top:350px; 
+		margin-top:-350px;
+		font-size:1.6rem;
+	}
+	&__details{		
+		margin-left:0px;
+		font-size:0.9rem;
+		margin-left:0px;
+		text-decoration:none;
+		
+		@mixin atSmall{
+			margin-left:40px;
+			font-size:1.0rem;
+			margin-left:0px;
+			text-decoration:none;
+			
+		}
+		
+		@mixin atMedium{
+			margin-left:40px;
+			font-size:1.0rem;
+			margin-left:0px;
+			text-decoration:none;
+			
+		}
+		
+		@mixin atLarge{
+			margin-left:40px;
+			font-size:1.2rem;
+			margin-left:0px;
+			text-decoration:none;
+			
+		}
+	}
+	
+	&__contact-box{
+		font-size:1.0rem;
+		margin:20px 0 0 40px;
+		
+		
+		@mixin atSmall{
+			
+			font-size:1.0rem;
+			
+			
+		}
+		
+		@mixin atMedium{
+			
+			font-size:1.2rem;
+			
+			
+		}
+		
+		@mixin atLarge{
+			
+			font-size:1.4rem;
+			
+			
+		}
+		
+		
+	}
+	
+	&__drawline{
+		display:block;
+		height:1px;
+		border:0;
+		border-top: 1px solid #ccc;
+		margin:30px 0 60px 0;	
+		
+	}
+}
+	
+#back-button{		
+	  display: none;
+	  position: fixed;
+	  bottom: 80px;
+	  left: 20px;
+	  z-index: 99;
+	  border: none;
+	  outline: none;
+	  background-color:#0CF;
+	  cursor: pointer;
+	  padding: 6px 14px;
+	  border-radius: 15px;
+	  font-size:1.0rem;
+	  font-weight:300;
+	  color:white;	
+
+	&:hover{		
+		background-color: #555;
+		}
+}	
+	
+

@@ -18,28 +18,28 @@
 	
 	@mixin atSmall{
 		font-size:1.0rem;
-		
+		height:60px;
 	}
 	
 	@mixin atMedium{
 		font-size:0.8rem;
-		
+		height:40px;
 	}
 	
 	@mixin atLarge{
 		font-size:1.0rem;
-		
+		height:60px;
 	}
 	
 	&__be-aware{
 		position:absolute;
-		right:20px;
+		right:10px;
 		bottom:70px;
 		width:60px;
 		height:auto;
 		
 		@mixin atMedium{
-			right:20px;
+			right:10px;1
 			bottom:70px;
 			width:90px;
 			height:auto;
