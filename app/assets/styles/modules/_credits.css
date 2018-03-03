@@ -1,0 +1,114 @@
+.credits{
+	
+
+
+	&__header{
+		position:relative;	
+		top:190px;
+		background: url(/assets/images/mandela_university_1170x655.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;				
+		background-position:top;
+		width:100%;
+		height:985px;
+		background-color:$mainBlue;
+		border-bottom:1px solid #fff;
+		
+		@mixin atMedium{			
+			top:0px;
+			height:740px;
+			background-size: cover;		
+			background-position:0 -250px;
+			border-bottom:1px solid #fff;
+		}
+		
+		@mixin atLarge{
+			top:0px;
+			height:985px;
+			background-size: cover;		
+			background-position:0 120px;
+			border-bottom:1px solid #fff;
+		}
+	}
+	
+	&__heading{
+		position:absolute;
+		top:280px;
+		right:120px;
+		color:#fff;
+		width:60%;
+		/* margin:0 auto 0 auto; */
+		text-align:left;
+		font-family:"Roboto",sans-serif;
+		font-weight:300;
+		font-size:1.8rem;
+		text-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+	}
+	
+	&__sponsors{
+		/* position:absolute;
+		top:20px;
+		left:20px; */
+		/* width:60%;		 */
+		/* margin:0px 0 20px 20px; */
+		display:block;
+		margin-bottom:40px;
+		text-align:left;
+		font-family:"Roboto",sans-serif;
+		font-weight:400;
+		font-size:2.0rem;
+		text-shadow: 4px 4px 12px rgba(0,0,0,0.5);
+	}
+	
+	&__bar-v{
+		position:absolute;
+		top:620px;
+		right:480px;
+		width:480px;
+		height:1200px;
+		padding:20px 0 20px 20px;
+		/* background-color:green; */
+		background-color:rgba(20,160,220,0.5);
+		
+	}
+	
+	&__bar-h{
+		position:absolute;
+		top:1220px;
+		left:0px;
+		width:90%;
+		height:360px;
+		padding:20px 0 20px 20px;
+		/* background-color:green; */
+		background-color:rgba(20,220,180,0.5);
+		
+	}
+	
+	&__rufford{
+		display:block;
+		margin:40px 0 40px 180px;
+		/* text-align:left;
+		font-family:"Roboto",sans-serif;
+		font-weight:400;
+		font-size:2.0rem; */
+		/* text-shadow: 4px 4px 12px rgba(0,0,0,0.5); */
+	}
+	
+	&__conserbio{
+		position:absolute;
+		top:190px;
+		right:420px;
+		display:block;
+		/* margin:40px 0 40px 180px; */
+		
+	}
+	
+	&__conserbio-image{		
+		position:absolute;
+		top:1100px;
+		right:420px;
+		width:420px;
+		height:auto;
+	}
+
+}

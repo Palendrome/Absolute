@@ -45,7 +45,7 @@
 		background-size: contain;			
 		background-image:url(/assets/images/whale-entanglement__1280x840.jpg);
 		background-position:center;
-		background-color:green;
+		/* background-color:green; */
 		
 		@mixin atSmall{
 			height:460px;
@@ -147,6 +147,7 @@
 			margin:60px auto 80px auto;
 			padding:40px 40px;			
 			font-size:1.4rem;
+			
 		}
 	}
 		
@@ -155,7 +156,7 @@
 		list-style-type:none;
 		color:#fff;
 		text-decoration:none;
-		line-height:1.4rem;
+		line-height:2.5rem;
 		list-style-position:inside;
 		
 		

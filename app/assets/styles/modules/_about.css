@@ -115,14 +115,14 @@
 		}
 	}
 	&__guardian{
-		background-color:rgba(50,91,122,1);
+		background-color:rgba(60,101,132,0.6);
 		position:relative;
 		left:0px;		
-		border-radius:16px;		
+		border-radius:18px;		
 		text-align:left;		
-		width:90%;
+		width:60%;
 		/* overflow:hidden;		 */
-		margin:30px 8px 60px 8px;
+		/* margin:30px 8px 40px 8px; */
 		
 		@mixin atMedium{
 			left:220px;
@@ -158,6 +158,7 @@
 	&__logo-thumb{	
 		/* position:relative; */
 		margin:30px 0 0 0px;
+		padding:30px 0 0 30px;
 		width:140px;
 		height:auto;	
 		vertical-align:top;
@@ -195,27 +196,27 @@
 		left:-40px;			
 		font-family:Tahoma, Geneva, sans-serif;
 		font-size:0.9rem;
-		font-weight:bold;
+		font-weight:300;
 		color:#fff;
 		margin:0px 0 0 70px;
 		text-shadow:2px 2px 6px rgba(0,0,0,0.4);
 		
 		@mixin atMedium{
 			top:40px;
-			left:310px;	
-			font-size:1.2rem;
+			left:100px;	
+			font-size:1.8rem;
 		}
 		
 		@mixin atLarge{			
 			top:70px;
 			left:200px;	
-			font-size:1.9rem;
+			font-size:2.5rem;
 		}
 		
 		
 	}
 
-	&__guardian-text{
+	&__guardian-text{		
 		position:relative;
 		top:30px;
 		left:10px;
