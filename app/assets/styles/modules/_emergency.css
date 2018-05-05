@@ -93,11 +93,42 @@
 		
 		@mixin atLarge{			
 			top:540px;
-			left:680px;			
+			left:860px;			
 			font-size:6rem;
+		}
+	}
+	
+	&__credit{
+		position:absolute;
+		top:540px;
+		left:680px;
+		font-family:"Roboto",sans-serif;
+		font-size:1rem;
+		font-weight:200;
+		text-shadow:4px 4px 6px rgba(0,0,0,0.5);
+		
+		@mixin atSmall{
+			top:540px;
+			left:680px;			
+			font-size:1rem;
+		}
+		
+		
+		@mixin atMedium{
+			top:355px;
+			left:526px;			
+			font-size:1rem;
+		}
+		
+		@mixin atLarge{			
+			top:560px;
+			left:870px;			
+			font-size:1.5rem;
+			font-weight:300;
 		}
 		
 	}
+	
 	
 	&__header-text{
 		width:80%;
