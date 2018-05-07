@@ -108,7 +108,7 @@
 	&__logo-text{		
 		position:absolute;				
 		top:145px;
-		left:92px;		
+		left:95px;		
 		text-align:left;
 		font-family:"Oswald", Sans-serif;
 		color:rgba(223,242,242,1.0);
@@ -119,7 +119,7 @@
 		
 		@mixin atSmall{
 			top:240px;
-			left:216px;
+			left:230px;
 			width:590px;
 			font-size:2.5rem;
 			text-shadow:3px 3px 6px rgba(22,22,22,0.5);
@@ -136,7 +136,7 @@
 				
 		@mixin atLarge{
 			top:370px;
-			left:340px;
+			left:360px;
 			width:590px;
 			font-size:3.5rem;
 			text-shadow:4px 4px 6px rgba(22,22,22,0.4);
